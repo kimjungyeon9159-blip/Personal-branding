@@ -123,7 +123,6 @@
         비로소 <span class="text-brand relative inline-block">진짜 내가<span class="absolute bottom-2 left-0 w-full h-5 bg-brand/25 -z-10"></span></span> 보입니다.
       </h1>
 
-      <!-- 요청 반영 문구 수정 완료 (다정한 온기 삭제 -> 맑은 에너지와 흔들리지 않는 중심) -->
       <p class="text-xl md:text-2xl text-slate-800 max-w-4xl mx-auto leading-relaxed mb-12 font-bold bg-white/90 backdrop-blur-sm p-6 rounded-2xl border-2 border-sky-100 shadow-md">
         안녕하세요! 매일 좋아하는 한 가지 운동으로 스트레스를 산뜻하게 비워내고, <br class="hidden md:block">
         탄탄해진 체력을 바탕으로 주위 사람들에게 <span class="text-brand-dark font-extrabold underline decoration-brand decoration-4">맑은 에너지와 흔들리지 않는 중심</span>을 나누는 <strong class="font-black text-slate-900">김정연</strong>입니다.
@@ -281,7 +280,7 @@
             과도한 잡념은 운동으로 말끔히 해소합니다. 쓸데없는 군더더기를 걷어내고, 문제를 관통하는 핵심 솔루션을 도출해내는 담백한 기획력을 발휘합니다.
           </p>
           <div id="strength-2" class="hidden text-sm text-brand-dark bg-sky-50/90 p-4 rounded-xl border-2 border-brand/30 transition-all font-bold">
-            🏊‍♀️ <strong>협업 메리트:</strong> 논쟁이 장기화되거나 소통 정체가 일어날 때, 복잡한 사안을 일목요연하게 정리하고 추진력 있게 전진합니다.
+                        🏊‍♀️ <strong>협업 메리트:</strong> 논쟁이 장기화되거나 소통 정체가 일어날 때, 복잡한 사안을 일목요연하게 정리하고 추진력 있게 전진합니다.
           </div>
           <span class="text-sm text-brand block mt-4 font-black group-hover:underline">클릭하여 자세히 보기 &rarr;</span>
         </div>
@@ -322,9 +321,9 @@
     </div>
   </section>
 
-  <!-- 4. 맞춤 운동 제안 모듈: "그럴 때는 이런 운동 어때요?" -->
+  <!-- 4. 맞춤 운동 제안 모듈: "그럴 때는 이런 운동 어때요?" (9종 확장 완비) -->
   <section id="exercise-recommender" class="py-24 relative overflow-hidden">
-    <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
+    <div class="max-w-6xl mx-auto px-6 text-center relative z-10">
       
       <!-- 섹션 헤더 -->
       <div class="mb-12">
@@ -339,6 +338,7 @@
       <div class="bg-white rounded-3xl p-8 md:p-12 shadow-xl border-4 border-brand-dark text-left">
         <h3 class="font-dohyeon text-2xl md:text-3xl text-brand mb-6 text-center">🎯 지금 나의 마음 신호 상태는?</h3>
         
+        <!-- 그리드 확장: 3에서 9종의 운동 추천으로 대폭 확장 -->
         <div class="grid sm:grid-cols-3 gap-4 mb-8">
           <button onclick="recommendExercise('exhausted')" class="p-5 rounded-2xl bg-sky-50 hover:bg-brand hover:text-white transition-all text-slate-950 font-black text-center border-2 border-sky-200 hover:border-brand-dark text-base md:text-lg flex flex-col items-center gap-2">
             <span>😫</span>
@@ -351,6 +351,30 @@
           <button onclick="recommendExercise('lost')" class="p-5 rounded-2xl bg-sky-50 hover:bg-brand hover:text-white transition-all text-slate-950 font-black text-center border-2 border-sky-200 hover:border-brand-dark text-base md:text-lg flex flex-col items-center gap-2">
             <span>😔</span>
             무기력하고 삶의 활력을<br>다시 채우고 싶어요
+          </button>
+          <button onclick="recommendExercise('tennis')" class="p-5 rounded-2xl bg-sky-50 hover:bg-brand hover:text-white transition-all text-slate-950 font-black text-center border-2 border-sky-200 hover:border-brand-dark text-base md:text-lg flex flex-col items-center gap-2">
+            <span>🎾</span>
+            강력한 타격감으로<br>스트레스를 날릴래요
+          </button>
+          <button onclick="recommendExercise('golf')" class="p-5 rounded-2xl bg-sky-50 hover:bg-brand hover:text-white transition-all text-slate-950 font-black text-center border-2 border-sky-200 hover:border-brand-dark text-base md:text-lg flex flex-col items-center gap-2">
+            <span>⛳</span>
+            조용하고 깊은 몰입과<br>마인드 컨트롤이 필요해요
+          </button>
+          <button onclick="recommendExercise('ballet')" class="p-5 rounded-2xl bg-sky-50 hover:bg-brand hover:text-white transition-all text-slate-950 font-black text-center border-2 border-sky-200 hover:border-brand-dark text-base md:text-lg flex flex-col items-center gap-2">
+            <span>🩰</span>
+            흐트러진 몸의 균형과<br>선을 곧게 세우고 싶어요
+          </button>
+          <button onclick="recommendExercise('pilates')" class="p-5 rounded-2xl bg-sky-50 hover:bg-brand hover:text-white transition-all text-slate-950 font-black text-center border-2 border-sky-200 hover:border-brand-dark text-base md:text-lg flex flex-col items-center gap-2">
+            <span>🧘‍♀️</span>
+            내면의 속근육과 코어를<br>단단하게 다잡고 싶어요
+          </button>
+          <button onclick="recommendExercise('climbing')" class="p-5 rounded-2xl bg-sky-50 hover:bg-brand hover:text-white transition-all text-slate-950 font-black text-center border-2 border-sky-200 hover:border-brand-dark text-base md:text-lg flex flex-col items-center gap-2">
+            <span>🧗‍♂️</span>
+            벽을 마주한 것처럼<br>새로운 도전이 필요해요
+          </button>
+          <button onclick="recommendExercise('crossfit')" class="p-5 rounded-2xl bg-sky-50 hover:bg-brand hover:text-white transition-all text-slate-950 font-black text-center border-2 border-sky-200 hover:border-brand-dark text-base md:text-lg flex flex-col items-center gap-2">
+            <span>🏋️‍♀️</span>
+            다 같이 한계에 도전하며<br>엔돌핀을 터뜨릴래요
           </button>
         </div>
 
@@ -444,8 +468,9 @@
             🥠
           </div>
           <h3 class="font-dohyeon text-2xl text-slate-800">정연이의 긍정 헬스 포춘 쿠키</h3>
+          <!-- 요청 반영: '무작위 운동 조언' 에서 '무작위' 단어 전격 삭제 완료 -->
           <p class="text-slate-700 font-extrabold text-sm md:text-base">
-            위의 쿠키를 클릭하면 하루의 피로를 싹 씻어줄 무작위 운동 조언과 위트 있는 에너지 명언이 열립니다!
+            위의 쿠키를 클릭하면 하루의 피로를 싹 씻어줄 운동 조언과 위트 있는 에너지 명언이 열립니다!
           </p>
           <div id="fortune-display" class="hidden bg-white p-5 rounded-2xl border-2 border-dashed border-amber-400 text-brand-dark font-black text-base md:text-lg w-full max-w-md shadow-inner transition-all transform duration-300">
             "포춘 쿠키를 쪼개어 오늘의 에너지를 획득하세요!"
@@ -570,7 +595,7 @@
       }
     }
 
-    // 3. 기분 기계 맞춤형 운동 처방전 추천 엔진
+    // 3. 기분 기계 맞춤형 운동 처방전 추천 엔진 (9종 확장)
     function recommendExercise(mood) {
       const resultBox = document.getElementById('recommender-result');
       const recIcon = document.getElementById('rec-icon');
@@ -599,6 +624,36 @@
         recTitle.innerText = "경쾌하게 대지를 차고 나아가는 '러닝'을 처방합니다!";
         recDesc.innerText = "방구석과 사무실 책상에 갇힌 멘탈을 구출하려면 일단 달려야 합니다. 한 걸음씩 보도블록을 내디딜 때 느껴지는 지면의 반발력과 뺨을 스치는 산뜻한 바람이 고여있던 정연하지 못한 무기력함을 말끔히 쓸어내 줍니다.";
         recTag.innerText = "#러닝메이트 #첫걸음이_중요해 #도파민충전";
+      } else if (mood === 'tennis') {
+        recIcon.innerText = "🎾";
+        recTitle.innerText = "라켓 끝에 전해지는 짜릿한 파괴력, '테니스'를 처방합니다!";
+        recDesc.innerText = "가슴속 응어리진 스트레스나 한 주 동안 쌓인 압박감은 노란 공을 강하게 격파하는 타격감으로 해결됩니다. 코트를 바쁘게 질주하고 호쾌한 스윙을 날리다 보면, 어느샌가 고민은 사라지고 개운한 쾌감만 가득 차오릅니다.";
+        recTag.innerText = "#랠리_몰입 #라켓스트레스아웃 #유산소끝판왕";
+      } else if (mood === 'golf') {
+        recIcon.innerText = "⛳";
+        recTitle.innerText = "고요한 그린 위에서 나를 정밀하게 직면하는 '골프'를 처방합니다!";
+        recDesc.innerText = "어수선한 일상을 멈추고 고독한 평정심과 차분한 지혜를 발휘하고 싶다면 골프가 해답입니다. 한 샷 한 샷에 온전히 나의 밸런스, 그립, 호흡을 동기화하여 완벽하게 제어된 움직임의 예술을 누리세요.";
+        recTag.innerText = "#마인드컨트롤 #초정밀_스윙 #그린필드디톡스";
+      } else if (mood === 'ballet') {
+        recIcon.innerText = "🩰";
+        recTitle.innerText = "흐트러진 선을 우아하게 바로 세우는 '발레'를 처방합니다!";
+        recDesc.innerText = "컴퓨터 앞에서 경직된 척추와 피로한 근육을 우아하고 곧게 정렬해 줄 발레의 세계를 경험하세요. 호흡을 정갈하게 쉬며 사소한 근육 끝까지 긴장감을 유지하는 동안, 마음마저 기품 있고 굳건하게 바로 서게 될 것입니다.";
+        recTag.innerText = "#우아한중심 #자세정렬_마스터 #클래식근력";
+      } else if (mood === 'pilates') {
+        recIcon.innerText = "🧘‍♀️";
+        recTitle.innerText = "나의 중심을 굳건하게 잡는 내면의 힘, '필라테스'를 처방합니다!";
+        recDesc.innerText = "흔들리는 주변 환경 속에서 흔들리지 않는 단단한 '코어'를 잡아야 할 때입니다. 깊은 흉식 호흡과 근육 하나하나의 정확한 제어에만 집중하다 보면, 몸의 내공과 함께 어지럽던 정신도 확실한 주체성을 되찾습니다.";
+        recTag.innerText = "#속근육마인드 #코어밸런스 #나를_다잡는_시간";
+      } else if (mood === 'climbing') {
+        recIcon.innerText = "🧗‍♂️";
+        recTitle.innerText = "새로운 홀드를 정복하며 한 단계씩 도약하는 '클라이밍'을 처방합니다!";
+        recDesc.innerText = "지루하게 반복되는 일상을 비틀고 강력한 성취 욕구를 부활시키고 싶다면 단연 클라이밍입니다. 다음 돌을 붙잡기 위해 영리하게 머리를 굴리고 전신을 팽팽하게 조일 때, 눈앞의 거대한 장애물이 도전에 불과했음을 깨닫습니다.";
+        recTag.innerText = "#루트파인딩 #성취감_폭발 #전신인내력";
+      } else if (mood === 'crossfit') {
+        recIcon.innerText = "🏋️‍♀️";
+        recTitle.innerText = "나를 뛰어넘는 뜨거운 동료애와 에너지, '크로스핏'을 처방합니다!";
+        recDesc.innerText = "혼자가 아닌 '함께' 한계를 부수고 인생 최고의 폭발적인 아드레날린을 마주하세요. 소리치고, 힘껏 바벨을 들어 올리는 우직한 연대의 에너지 속에서 무기력했던 영혼이 건강하고 명쾌하게 리셋될 것입니다.";
+        recTag.innerText = "#WOD돌파 #함께하는시너지 #한계는_없다";
       }
     }
 
